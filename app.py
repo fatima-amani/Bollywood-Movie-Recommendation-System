@@ -10,10 +10,10 @@ st.set_page_config(
 
 )
 
-movie_list = pickle.load(open('movie_list.pkl', 'rb'))
+movie_list = pickle.load(open('bollywood_movie_list.pkl', 'rb'))
 movie_title_list = movie_list['movie_name'].values
 
-similarity_vector = pickle.load(open('similarity.pkl', 'rb'))
+similarity_vector = pickle.load(open('bollywood_similarity.pkl', 'rb'))
 
 st.markdown("<h1 style='text-align: center;'>Movie Recommendation System</h1>", unsafe_allow_html=True)
 st.markdown("<h5 style='text-align: center;'>By Fatima Amani</h5>", unsafe_allow_html=True)

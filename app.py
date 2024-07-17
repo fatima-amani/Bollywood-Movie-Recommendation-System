@@ -20,13 +20,6 @@ st.markdown("<h5 style='text-align: center;'>By Fatima Amani</h5>", unsafe_allow
 st.write("")
 st.write("")
 
-
-# def get_poster_path(movie_id):
-#     response = requests.get(f"https://api.themoviedb.org/3/movie/{movie_id}?api_key=d71db26bc6202075b61932637f591216")
-#     poster_path = response.json()['poster_path']
-#     return "https://image.tmdb.org/t/p/w500/" + poster_path
-
-
 def recommend(movie):
     movie_index = movie_list[movie_list['movie_name'] == movie].index[0]
     distances = similarity_vector[movie_index]
